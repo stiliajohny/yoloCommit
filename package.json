@@ -1,0 +1,83 @@
+{
+  "name": "yolocommit",
+  "displayName": "yoloCommit",
+  "author": "stilia.johny",
+  "license": "GPL-3.0",
+  "publisher": "JohnStilia",
+  "description": "Can't be bothered to write a commit, yoloCommit dude.",
+  "icon": "resources/icon.png",
+  "preview": true,
+  "version": "0.0.1",
+  "sponsor": {
+    "url": "https://github.com/sponsors/stiliajohny"
+  },
+  "engines": {
+    "vscode": "^1.76.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "commit",
+    "random",
+    "message",
+    "git",
+    "automation",
+    "productivity",
+    "code quality",
+    "code hygiene",
+    "workflow",
+    "efficiency",
+    "developer tools",
+    "software development"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "yolocommit.randomCommit",
+        "title": "yoloCommit"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "yolocommit.randomCommit",
+        "key": "ctrl+alt+c",
+        "mac": "cmd+alt+c"
+      }
+    ],
+    "menus": {
+      "scm/title": [
+        {
+          "submenu": "git.commit",
+          "group": "2_main@1",
+          "when": "scmProvider == git"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "repository": {
+    "type": "https",
+    "url": "https://github.com/stiliajohny/pasteportal"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.0.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "@types/vscode": "^1.76.0",
+    "@vscode/test-electron": "^2.2.0",
+    "@vscode/vsce": "^2.18.0",
+    "eslint": "^8.28.0",
+    "glob": "^8.0.3",
+    "mocha": "^10.1.0",
+    "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "axios": "^1.3.4"
+  }
+}

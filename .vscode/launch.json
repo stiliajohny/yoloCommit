@@ -1,0 +1,38 @@
+// A launch configuration that launches the extension inside a new window
+// Use IntelliSense to learn about possible attributes.
+// Hover to view descriptions of existing attributes.
+// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Run Extension",
+			"type": "extensionHost",
+			"request": "launch",
+			"args": [
+				"--extensionDevelopmentPath=${workspaceFolder}",
+				"--profile-temp",
+				"--disable-extensions",
+				"--disable-gpu",
+				"--disable-restore-windows",
+				"--disable-telemetry",
+				"--disable-updates",
+				"--disable-web-security",
+				"--disable-write-watchdog",
+				"--disable-xss-auditor",
+				"--enable-logging",
+				"--ignore-certificate-errors",
+				"--ignore-certificate-errors-spki-list"
+			]
+		},
+		{
+			"name": "Extension Tests",
+			"type": "extensionHost",
+			"request": "launch",
+			"args": [
+				"--extensionDevelopmentPath=${workspaceFolder}",
+				"--extensionTestsPath=${workspaceFolder}/test/suite/index"
+			]
+		}
+	]
+}
