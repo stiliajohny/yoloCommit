@@ -7,20 +7,45 @@ function activate(context) {
 
 	let disposable = vscode.commands.registerCommand('yolocommit.randomCommit', async function () {
 		const response = await axios.get('http://whatthecommit.com/index.txt');
-		// print the text of the reposne to the console
-		console.log(response.data);
-
-		const commitMessage = `Yolo Commit: ${response.data.trim()}`;
-		// show a vscode message with the commit message and then remove it after 5 seconds
-		const message = vscode.window.showInformationMessage(response.data.trim());
-		setTimeout(() => message.dispose(), 5000);
 
 
-		const options = { cwd: vscode.workspace.rootPath };
-		const add = spawn('git', ['add', '.'], options);
-		await new Promise(resolve => add.on('close', resolve));
-		const commit = spawn('git', ['commit', '-m', commitMessage], options);
-		await new Promise(resolve => commit.on('close', resolve));
+		const push_to_remote = vscode.workspace
+			.getConfiguration()
+			.get('yolocommit.push_to_remote')
+
+
+		if (push_to_remote) {
+			const commitMessage = `Yolo Commit: ${response.data.trim()}`;
+			// show a vscode message with the commit message and then remove it after 5 seconds
+			const message = vscode.window.showInformationMessage("Git Push: " + response.data.trim());
+			setTimeout(() => message.dispose(), 5000);
+
+
+			const options = { cwd: vscode.workspace.rootPath };
+			const add = spawn('git', ['add', '.'], options);
+			await new Promise(resolve => add.on('close', resolve));
+			const commit = spawn('git', ['commit', '-m', commitMessage], options);
+			await new Promise(resolve => commit.on('close', resolve));
+			const push = spawn('git', ['push'], options);
+			await new Promise(resolve => push.on('close', resolve));
+		}
+		else {
+
+			const commitMessage = `Yolo Commit: ${response.data.trim()}`;
+			// show a vscode message with the commit message and then remove it after 5 seconds
+			const message = vscode.window.showInformationMessage(response.data.trim());
+			setTimeout(() => message.dispose(), 5000);
+
+
+			const options = { cwd: vscode.workspace.rootPath };
+			const add = spawn('git', ['add', '.'], options);
+			await new Promise(resolve => add.on('close', resolve));
+			const commit = spawn('git', ['commit', '-m', commitMessage], options);
+			await new Promise(resolve => commit.on('close', resolve));
+
+		}
+
+
 	});
 
 	context.subscriptions.push(disposable);

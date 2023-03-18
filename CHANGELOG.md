@@ -2,8 +2,25 @@
 
 All notable changes to the "yolocommit" extension will be documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## [v0.1.0] - 2023-03-18
 
-## [Unreleased]
+### Added
 
-- Initial release
+- Configuration to push to a remote repository
+- Pop up to show the commit message
+
+### Changed
+
+- Icon for the extension
+
+### Removed
+
+- None
+
+### Fixed
+
+-
+
+### Security
+
+- None

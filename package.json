@@ -45,7 +45,16 @@
         "key": "ctrl+alt+c",
         "mac": "cmd+alt+c"
       }
-    ]
+    ],
+    "configuration": {
+      "properties": {
+        "yolocommit.push_to_remote": {
+          "type": "boolean",
+          "default": false,
+          "description": "Push to remote after commit"
+        }
+      }
+    }
   },
   "scripts": {
     "lint": "eslint .",
