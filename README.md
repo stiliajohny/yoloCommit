@@ -14,7 +14,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/non-existing-organization/yoloCommit">
-    <img src="https://github.com/non-existing-organization/yoloCommit/raw/master/resources/icon.png" alt="Main Logo" width="80" height="80">
+    <img src="https://github.com/non-existing-organization/yoloCommit/raw/master/resources/yolo.png" alt="Main Logo" width="80" height="80">
   </a>
 
   <h3 align="center">LazyLogX</h3>
