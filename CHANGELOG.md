@@ -2,7 +2,7 @@
 
 All notable changes to the "yolocommit" extension will be documented in this file.
 
-## [v0.1.0] - 2023-03-18
+## [v0.1.1] - 2023-03-18
 
 ### Added
 
