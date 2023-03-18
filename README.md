@@ -104,18 +104,19 @@ John Stilia - stilia.johny@gmail.com
 - [Img Shields](https://shields.io)
 - [Choose an Open Source License](https://choosealicense.com)
 - [GitHub Pages](https://pages.github.com)
+- <http://whatthecommit.com>
 
-[contributors-shield]: https://img.shields.io/github/contributors/non-existing-organization/yoloCommit.svg
-[contributors-url]: https://github.com/non-existing-organization/yoloCommit/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/non-existing-organization/yoloCommit.svg
-[forks-url]: https://github.com/non-existing-organization/yoloCommit/network/members
-[stars-shield]: https://img.shields.io/github/stars/non-existing-organization/yoloCommit.svg
-[stars-url]: https://github.com/non-existing-organization/yoloCommit/stargazers
-[issues-shield]: https://img.shields.io/github/issues/non-existing-organization/yoloCommit.svg
-[issues-url]: https://github.com/non-existing-organization/yoloCommit/issues
-[license-shield]: https://img.shields.io/github/license/non-existing-organization/yoloCommit
-[license-url]: https://github.com/non-existing-organization/yoloCommit/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg
+  [contributors-shield]: https://img.shields.io/github/contributors/non-existing-organization/yoloCommit.svg
+  [contributors-url]: https://github.com/non-existing-organization/yoloCommit/graphs/contributors
+  [forks-shield]: https://img.shields.io/github/forks/non-existing-organization/yoloCommit.svg
+  [forks-url]: https://github.com/non-existing-organization/yoloCommit/network/members
+  [stars-shield]: https://img.shields.io/github/stars/non-existing-organization/yoloCommit.svg
+  [stars-url]: https://github.com/non-existing-organization/yoloCommit/stargazers
+  [issues-shield]: https://img.shields.io/github/issues/non-existing-organization/yoloCommit.svg
+  [issues-url]: https://github.com/non-existing-organization/yoloCommit/issues
+  [license-shield]: https://img.shields.io/github/license/non-existing-organization/yoloCommit
+  [license-url]: https://github.com/non-existing-organization/yoloCommit/blob/master/LICENSE.txt
+  [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg
 
 [linkedin-url]: https://linkedin.com/in/]/
 [ask-me-anything]: https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg

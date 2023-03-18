@@ -45,16 +45,7 @@
         "key": "ctrl+alt+c",
         "mac": "cmd+alt+c"
       }
-    ],
-    "menus": {
-      "scm/title": [
-        {
-          "submenu": "git.commit",
-          "group": "2_main@1",
-          "when": "scmProvider == git"
-        }
-      ]
-    }
+    ]
   },
   "scripts": {
     "lint": "eslint .",

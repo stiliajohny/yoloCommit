@@ -11,7 +11,10 @@ function activate(context) {
 		console.log(response.data);
 
 		const commitMessage = `Yolo Commit: ${response.data.trim()}`;
-		console.log(`🗒️ LazyLogX Lazy Debugging for: commitMessage  =>  ${commitMessage}`);
+		// show a vscode message with the commit message and then remove it after 5 seconds
+		const message = vscode.window.showInformationMessage(response.data.trim());
+		setTimeout(() => message.dispose(), 5000);
+
 
 		const options = { cwd: vscode.workspace.rootPath };
 		const add = spawn('git', ['add', '.'], options);
