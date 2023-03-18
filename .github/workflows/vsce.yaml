@@ -1,0 +1,42 @@
+name: vsce publish
+on:
+  push:
+    tags:
+      - "*"
+
+jobs:
+  publish_to_vsce:
+    name: Publish to VS Code Marketplace
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 16
+      # - run: npm ci on a specific folder
+      - run: |
+          npm ci
+
+      - name: Publish to Visual Studio Marketplace
+        uses: HaaLeo/publish-vscode-extension@v1
+        with:
+          pat: ${{ secrets.VS_MARKETPLACE_TOKEN }}
+          registryUrl: https://marketplace.visualstudio.com
+          packagePath: ./
+
+  slack-notification:
+    runs-on: ubuntu-latest
+    name: Slack Notification
+    needs: publish_to_vsce
+    steps:
+      - name: Slack Notification
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_CHANNEL: lazylogx
+          SLACK_COLOR: ${{ job.status }} # or a specific color like 'good' or '#ff00ff'
+          SLACK_ICON: https://github.com/stiliajohny/lazylogx/blob/master/resources/slack-icon-webhook.png?raw=true?size=48
+          SLACK_MESSAGE: "Kaboom, new version ${{ github.ref }} has been send for approval to Microsoft. \nCheck at: https://marketplace.visualstudio.com/items?itemName=JohnStilia.lazylogx"
+          SLACK_TITLE: Deployment successful
+          SLACK_USERNAME: "AutomateX-K9"
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_FOOTER: "The non existing automation dogbot, woof,woof,woof"

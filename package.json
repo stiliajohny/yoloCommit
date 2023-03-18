@@ -59,11 +59,12 @@
   "scripts": {
     "lint": "eslint .",
     "pretest": "npm run lint",
-    "test": "node ./test/runTest.js"
+    "test": "node ./test/runTest.js",
+    "deploy": "vsce publish --no-yarn"
   },
   "repository": {
     "type": "https",
-    "url": "https://github.com/stiliajohny/pasteportal"
+    "url": "https://github.com/non-existing-organization/yoloCommit"
   },
   "devDependencies": {
     "@types/glob": "^8.0.0",

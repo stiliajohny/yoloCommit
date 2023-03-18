@@ -14,15 +14,15 @@
 <br />
 <p align="center">
   <a href="https://github.com/non-existing-organization/yoloCommit">
-    <img src="https://github.com/non-existing-organization/yoloCommit/raw/master/resources/yolo.png" alt="Main Logo" width="80" height="80">
+    <img src="https://github.com/non-existing-organization/yoloCommit/raw/master/resources/icon.png" alt="Main Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">LazyLogX</h3>
+  <h3 align="center">yoloCommit</h3>
 
   <p align="center">
 Can't be bothered to write a commit, yoloCommit dude.
     <br />
-    <a href="https://marketplace.visualstudio.com/items?itemName=JohnStilia.lazylogx">VSCode Extension</a>
+    <a href="https://marketplace.visualstudio.com/items?itemName=JohnStilia.yoloCommit">VSCode Extension</a>
     </br>
     <a href="https://github.com/non-existing-organization/yoloCommit/issues/new?labels=i%3A+bug&template=1-bug-report.md">Report Bug</a>
     ·
