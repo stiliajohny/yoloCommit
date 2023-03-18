@@ -67,3 +67,14 @@ jobs:
         run: npm run deploy
         env:
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
+      - name: Slack Notification
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_CHANNEL: yolocommit
+          SLACK_COLOR: ${{ job.status }} # or a specific color like 'good' or '#ff00ff'
+          SLACK_ICON: https://github.com/stiliajohny/lazylogx/blob/master/resources/slack-icon-webhook.png?raw=true?size=48
+          SLACK_MESSAGE: "Kaboom, new version ${{ github.ref }} has been send for approval to Microsoft. \nCheck at: https://marketplace.visualstudio.com/items?itemName=JohnStilia.yolocommit"
+          SLACK_TITLE: Deployment successful
+          SLACK_USERNAME: "AutomateX-K9"
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_FOOTER: "The non existing automation dogbot, woof,woof,woof"
