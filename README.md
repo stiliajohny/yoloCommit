@@ -39,7 +39,6 @@ Can't be bothered to write a commit, yoloCommit dude.
 - [About The Project](#about-the-project)
 - [Usage](#usage)
 - [Using the VSCode Extension](#using-the-vscode-extension)
-- [Supported Languages](#supported-languages)
 - [Roadmap](#roadmap)
 - [Contributing](#contributing)
 - [License](#license)
@@ -61,19 +60,10 @@ YoloCommit is a VS Code extension that takes the work out of committing code by 
 1. Install the extension from the [VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=JohnStilia.yolocommit)
 2. Write Code
 
-3. Press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Cmd</kbd>+<kbd>L</kbd> or <kbd>Cmd</kbd>+<kbd>Alt</kbd>+<kbd>Win</kbd>+<kbd>L</kbd> to log the variable on a new line.
-4. Run your code and enjoy lazy debugging.
-
-You can also remote the console statement by going to the line with a statement and press the keybind again.
+3. Press <kbd>Cmd</kbd>+<kbd>Option</kbd>+<kbd>C</kbd> or <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>C</kbd> to yolo commit.
+4. Continue writing code
 
 ---
-
-## Supported Languages
-
-- JavaScript
-- TypeScript
-- Python
-- Go
 
 ## Roadmap
 
