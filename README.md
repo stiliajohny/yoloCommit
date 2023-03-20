@@ -99,7 +99,6 @@ John Stilia - stilia.johny@gmail.com
 
 ## Acknowledgements
 
-- [Yezen](https://github.com/yezen-alnafei)
 - [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
 - [Img Shields](https://shields.io)
 - [Choose an Open Source License](https://choosealicense.com)
