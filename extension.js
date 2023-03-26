@@ -13,9 +13,15 @@ function activate(context) {
 			.getConfiguration()
 			.get('yolocommit.push_to_remote')
 
+		//  get the commit prefix from the settings
+		const commit_prefix = vscode.workspace
+			.getConfiguration()
+			.get('yolocommit.commit_prefix')
+		console.log(commit_prefix);
 
 		if (push_to_remote) {
-			const commitMessage = `Yolo Commit: ${response.data.trim()}`;
+			const commitMessage = `${commit_prefix}${response.data.trim()}`;
+			console.log(`🗞️ LazyLogX Lazy Debugging for: commitMessage  =>  ${commitMessage}`);
 			// show a vscode message with the commit message and then remove it after 5 seconds
 			const message = vscode.window.showInformationMessage("Git Push: " + response.data.trim());
 			setTimeout(() => message.dispose(), 5000);

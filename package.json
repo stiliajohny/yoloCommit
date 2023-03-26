@@ -52,6 +52,11 @@
           "type": "boolean",
           "default": false,
           "description": "Push to remote after commit"
+        },
+        "yolocommit.commit_prefix": {
+          "type": "string",
+          "default": "yoloCommit: ",
+          "description": "Prefix for commit message"
         }
       }
     }
