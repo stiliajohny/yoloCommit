@@ -6,7 +6,7 @@ const { spawn } = require('child_process');
 function activate(context) {
 
 	let disposable = vscode.commands.registerCommand('yolocommit.randomCommit', async function () {
-		const response = await axios.get('http://whatthecommit.com/index.txt');
+		const response = await axios.get('https://whatthecommit.com/index.txt');
 
 
 		const push_to_remote = vscode.workspace
